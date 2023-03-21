@@ -1,9 +1,12 @@
-function App() {
+import ChatHeader from "./components/ChatHeader";
+import * as C from "./styles";
+
+const App = () => {
   return (
-    <div className="App">
-      <h1>Chat web</h1>
-    </div>
+    <C.Container>
+      <ChatHeader />
+    </C.Container>
   );
-}
+};
 
 export default App;
