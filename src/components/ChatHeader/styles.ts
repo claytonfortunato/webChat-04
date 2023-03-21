@@ -4,13 +4,14 @@ export const Container = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   img {
     cursor: pointer;
   }
 `;
 
 export const Header = styled.div`
+  display: flex;
+  gap: 1rem;
   img {
     width: 3rem;
     height: 3rem;
@@ -20,10 +21,8 @@ export const Header = styled.div`
 `;
 
 export const Status = styled.div`
-  display: grid;
-
   strong {
-    margin-bottom: 0.25rem;
+    margin-bottom: 1rem;
     color: #fff;
   }
 
