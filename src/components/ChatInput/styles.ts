@@ -20,5 +20,16 @@ export const Container = styled.div`
     &:not(:disabled):focus {
       outline: 2px solid #e1e1e6;
     }
+
+    svg {
+      border: none;
+      background: transparent;
+      color: inherit;
+      position: absolute;
+      top: 0%;
+      right: 1.5rem;
+      cursor: pointer;
+      transform: translateY(-50%);
+    }
   }
 `;
