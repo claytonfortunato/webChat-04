@@ -7,11 +7,10 @@ export const Container = styled.div`
     border: none;
     width: 100%;
     background: #282843;
-    color: #fff;
     font-size: 1rem;
     border-radius: 999px;
     padding: 0.875rem 3.625rem 0.875rem 1.5rem;
-
+    color: #fff;
     &:disabled {
       opacity: 0.5;
       cursor: not-allowed;
@@ -20,16 +19,12 @@ export const Container = styled.div`
     &:not(:disabled):focus {
       outline: 2px solid #e1e1e6;
     }
-
-    svg {
-      border: none;
-      background: transparent;
-      color: inherit;
-      position: absolute;
-      top: 0%;
-      right: 1.5rem;
-      cursor: pointer;
-      transform: translateY(-50%);
-    }
   }
+`;
+
+export const Button = styled.button`
+  position: absolute;
+  top: 92%;
+
+  cursor: pointer;
 `;

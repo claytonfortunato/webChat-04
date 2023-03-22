@@ -5,9 +5,9 @@ const ChatInput = () => {
   return (
     <C.Container>
       <input type="text" placeholder="Digite sua mensagem" />
-      <button>
+      <C.Button>
         <PaperPlaneRight size={24} />
-      </button>
+      </C.Button>
     </C.Container>
   );
 };
