@@ -24,7 +24,9 @@ export const Container = styled.div`
 
 export const Button = styled.button`
   position: absolute;
-  top: 92%;
+  top: 92.2%;
 
   cursor: pointer;
+  background-color: #282843;
+  border: none;
 `;
