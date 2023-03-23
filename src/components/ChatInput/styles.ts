@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   width: 100%;
-
+  position: relative;
   input {
     border: none;
     width: 100%;
@@ -22,11 +22,18 @@ export const Container = styled.div`
   }
 `;
 
-export const Button = styled.button`
+export const Button = styled.div`
   position: absolute;
-  top: 92.2%;
-
+  top: 50%;
+  transform: translateY(-50%);
+  right: 1.5rem;
+  color: inherit;
   cursor: pointer;
-  background-color: #282843;
+  background-color: transparent;
   border: none;
+  transition: 0.5s all ease-in-out;
+
+  &:hover {
+    color: #ddd;
+  }
 `;
