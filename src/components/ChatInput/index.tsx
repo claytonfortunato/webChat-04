@@ -4,7 +4,7 @@ import { CircleNotch, PaperPlaneRight } from "phosphor-react";
 const ChatInput = () => {
   return (
     <C.Container>
-      <input type="text" placeholder="Digite sua mensagem" />
+      <input type="text" placeholder="Digite sua mensagem" required />
       <C.Button>
         <PaperPlaneRight size={24} />
       </C.Button>

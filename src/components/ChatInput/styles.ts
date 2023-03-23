@@ -24,7 +24,7 @@ export const Container = styled.div`
 
 export const Button = styled.div`
   position: absolute;
-  top: 50%;
+  top: 53%;
   transform: translateY(-50%);
   right: 1.5rem;
   color: inherit;
