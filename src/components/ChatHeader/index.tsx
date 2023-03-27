@@ -1,20 +1,33 @@
-import * as C from "./styles";
-import BotCecilia from "../../assets/cecilia.jpg";
-import close from "../../assets/closeicon.svg";
+import { X } from "phosphor-react";
 
-const ChatHeader = () => {
+interface ChatHeaderProps {
+  name: string;
+  urlImage: string;
+  hourMinutesFirstMessage: string;
+}
+
+export function ChatHeader({
+  name,
+  urlImage,
+  hourMinutesFirstMessage,
+}: ChatHeaderProps) {
   return (
-    <C.Container>
-      <C.Header>
-        <img src={BotCecilia} alt="Imagem do perfil" />
-        <C.Status>
-          <strong>ChatGPT</strong>
-          <span>Online</span>
-        </C.Status>
-      </C.Header>
-      <img src={close} alt="icon close" />
-    </C.Container>
+    <div>
+      <div>
+        <div>
+          <img src={urlImage} alt="BotCecilia" />
+          <div>
+            <span className="block font-bold text-base">{name}</span>
+            <span className="flex items-center gap-1 text-xs text-green-600  before:w-2 before:h-2 before:rounded-full before:bg-green-600">
+              Online
+            </span>
+          </div>
+        </div>
+        <X size={20} weight="bold" className="text-white" />
+      </div>
+      <span className="flex justify-center mt-[0.875rem] text-xs">
+        Hoje {hourMinutesFirstMessage}
+      </span>
+    </div>
   );
-};
-
-export default ChatHeader;
+}
