@@ -115,49 +115,43 @@ export function App() {
 
   return (
     <C.Container>
-      <div>
-        <ChatHeader
-          name={chat.you.name}
-          urlImage={BotCecilia}
-          hourMinutesFirstMessage={
-            messages.length ? messages[0].hourAndMinutesMessage : ""
-          }
-        />
+      <ChatHeader
+        name={chat.you.name}
+        urlImage={BotCecilia}
+        hourMinutesFirstMessage={
+          messages.length ? messages[0].hourAndMinutesMessage : ""
+        }
+      />
 
-        <div>
-          {messages.map((message, index) => {
-            return (
-              <ChatMessage
-                key={index}
-                name={message.name + " - " + message.hourAndMinutesMessage}
-                message={message.message}
-                you={message.id === chat.you.id}
-              />
-            );
-          })}
-        </div>
-
-        <div>
-          <form onSubmit={handleCreateNewMessage} className="relative">
-            <button className="absolute top-[0.875rem] right-6" type="submit">
-              <PaperPlaneRight
-                size={24}
-                weight="fill"
-                className="text-zinc-50"
-              />
-            </button>
-            <input
-              type="text"
-              id="message"
-              value={newMessageText}
-              placeholder="Digite sua mensagem"
-              onChange={handleNewMessageChange}
-              onInvalid={handleNewMessageInvalid}
-              required
+      <C.Message>
+        {messages.map((message, index) => {
+          return (
+            <ChatMessage
+              key={index}
+              name={message.name + " - " + message.hourAndMinutesMessage}
+              message={message.message}
+              you={message.id === chat.you.id}
             />
-          </form>
-        </div>
-      </div>
+          );
+        })}
+      </C.Message>
+
+      <C.Input>
+        <form onSubmit={handleCreateNewMessage}>
+          <button type="submit">
+            <PaperPlaneRight size={24} weight="fill" />
+          </button>
+          <input
+            type="text"
+            id="message"
+            value={newMessageText}
+            placeholder="Digite sua mensagem"
+            onChange={handleNewMessageChange}
+            onInvalid={handleNewMessageInvalid}
+            required
+          />
+        </form>
+      </C.Input>
     </C.Container>
   );
 }
