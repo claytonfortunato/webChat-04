@@ -2,25 +2,34 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  img {
-    cursor: pointer;
+  flex-direction: column;
+  margin-bottom: 1.875rem;
+  color: #fff;
+
+  span {
+    font-size: 0.75rem;
+    line-height: 1rem;
+    text-align: center;
   }
 `;
 
 export const Header = styled.div`
   display: flex;
-  gap: 1rem;
+  justify-content: space-between;
+  align-items: center;
+
   img {
     width: 3rem;
     height: 3rem;
     object-fit: cover;
     border-radius: 50%;
+    margin-right: 1rem;
   }
 `;
 
 export const Status = styled.div`
+  display: flex;
+
   strong {
     margin-bottom: 1rem;
     color: #fff;

@@ -7,7 +7,7 @@ interface ChatMessageProps {
 export function ChatMessage({ name, message, you }: ChatMessageProps) {
   return (
     <div>
-      <span className="block text-xs mb-[0.625rem]">{name}</span>
+      <span>{name}</span>
       <p>{message}</p>
     </div>
   );
