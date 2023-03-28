@@ -1,3 +1,5 @@
+import * as C from "./styles";
+
 interface ChatMessageProps {
   name: string;
   message: string;
@@ -6,9 +8,9 @@ interface ChatMessageProps {
 
 export function ChatMessage({ name, message, you }: ChatMessageProps) {
   return (
-    <div>
+    <C.Container>
       <span>{name}</span>
       <p>{message}</p>
-    </div>
+    </C.Container>
   );
 }

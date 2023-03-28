@@ -8,8 +8,11 @@ export const Container = styled.div`
   display: grid;
   grid-template-rows: max-content 1fr max-content;
   gap: 1.2rem;
-
+  font-weight: 300;
+  color: #fff;
   background-color: #1a1924;
+  font-size: 0.75rem;
+  line-height: 1rem;
 `;
 
 export const Message = styled.div``;
