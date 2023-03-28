@@ -15,6 +15,13 @@ import BotCecilia from "./assets/cecilia.jpg";
 
 import * as C from "./styles";
 
+interface MessagesProps {
+  name: string;
+  id: string;
+  message: string;
+  hourAndMinutesMessage: string;
+}
+
 const chat = {
   you: {
     id: "cecilia",
@@ -27,13 +34,6 @@ const chat = {
     urlImage: "",
   },
 };
-
-interface MessagesProps {
-  name: string;
-  id: string;
-  message: string;
-  hourAndMinutesMessage: string;
-}
 
 export function App() {
   const [messages, setMessages] = useState<MessagesProps[]>([]);
