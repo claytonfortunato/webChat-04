@@ -39,7 +39,7 @@ O projeto simula um chat funcional.
 
 ## 🔖 Layout
 
-Você pode visualizar o layout do projeto através [Figma](https://www.figma.com/community/file/1212757179376046656/%23boraCodar---Desafio-9)
+Você pode visualizar o layout do projeto através [Figma](https://www.figma.com/community/file/1200070743637495660/%23boraCodar---Desafio-4)
  
 
 ## :memo: Licença
