@@ -130,7 +130,6 @@ export function App() {
               key={index}
               name={message.name + " - " + message.hourAndMinutesMessage}
               message={message.message}
-              you={message.id === chat.you.id}
             />
           );
         })}
